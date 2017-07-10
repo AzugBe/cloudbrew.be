@@ -134,6 +134,15 @@ h1 {
     width: auto;
 }
 
+#cfp {
+    background:#000;
+    background:rgba(0,0,0,0.2);
+}
+
+#cfp a, #cfp a:visited {
+    color: #fff;
+}
+
 #speakers {
     background:#000;
     background:rgba(0,0,0,0.8);
