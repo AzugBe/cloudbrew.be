@@ -560,3 +560,13 @@ h1 {
     width: 100%;
     height: 100%;
 }
+
+/* Sessionize */
+#sz-modal-container .sz-session__title,
+#sz-modal-container .sz-session__description,
+#sz-modal-container .sz-session__tags,
+#sz-modal-container .sz-speaker__bio,
+#sz-modal-container .sz-speaker__sessions
+{
+	color: black !important;
+}
