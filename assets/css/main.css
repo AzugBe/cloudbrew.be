@@ -3,7 +3,7 @@
 
 body {
 	/* Change the background image here  */
-	background: url('../img/bg2.jpg') #000 top center fixed no-repeat;
+	background: url('../img/bg3.jpg') #000 top center fixed no-repeat;
 	background-size:150%;
 	font-family:'Open Sans',sans-serif;
 }
@@ -77,7 +77,10 @@ h1 {
 
 #intro p {
 	padding:15px 0;
-	color:#fff;
+	color:black;
+}
+#intro hr {
+	border: 1px solid #eee;
 }
 
 #live {
