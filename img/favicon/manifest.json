@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "CloudBrew",
+ "start_url": "https://www.cloudbrew.be",
  "icons": [
   {
    "src": "\/img\/favicon\/android-icon-36x36.png",

@@ -8,6 +8,9 @@ a {
   }
 }
 
+.bg-secondary a { color: $cloudbrew_yellow; }
+.bg-secondary a:focus, a:hover, a:active { color: $cloudbrew_yellow; }
+
 .btn {
   border-width: 2px;
 }
@@ -20,6 +23,15 @@ a {
   background-color: $secondary !important;
 }
 
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-secondary hr.star-light:after {
+  color: #fff;
+  background-color: $secondary;
+}
+
 .text-primary {
   color: $primary !important;
 }
@@ -29,13 +41,15 @@ a {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $cloudbrew_yellow;
+  border-color: $cloudbrew_yellow;
+  color: $black;
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
+    background-color: lighten($cloudbrew_yellow, 25%);
+    border-color: $cloudbrew_yellow;
+    color: $black;
   }
 }
 
@@ -48,4 +62,68 @@ a {
     background-color: darken($secondary, 10%);
     border-color: darken($secondary, 10%);
   }
+}
+
+/* CloudBrew */
+#mainNav {
+  .navbar-brand {
+    img {
+      width: 260px;
+    }
+  }
+  .navbar-nav {
+    li.nav-item {
+      a.nav-link {
+        &:hover {
+          background: $primary;
+          color: $white;
+        }
+        &.active {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+header.masthead {
+  background-image: url("../img/cloud.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.footer {
+  background-color: $secondary;
+}
+
+/* Sponsors */
+#sponsors img {
+  padding: 5px;
+}
+  
+/* Sessionize */
+#sz-modal-container .sz-session__title,
+#sz-modal-container .sz-session__description,
+#sz-modal-container .sz-session__speakers,
+#sz-modal-container .sz-session__tags,
+{
+	color: black !important;
+}
+
+#sz-modal-container .sz-speaker__name,
+#sz-modal-container .sz-speaker__tagline,
+#sz-modal-container .sz-speaker__bio,
+#sz-modal-container .sz-speaker__link_icon,
+#sz-modal-container .sz-speaker__sessions
+{
+	color: white !important;
+}
+
+.sz-session__title,
+.sz-session__description,
+.sz-session__speakers,
+.sz-session__tags,
+{
+	color: #E7D450 !important;
 }

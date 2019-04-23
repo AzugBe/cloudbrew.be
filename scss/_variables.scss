@@ -12,5 +12,8 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #18BC9C !default;
-$secondary: #2C3E50 !default;
+$primary: lighten(#050F39, 10%) !default;
+$secondary: #050F4A !default;
+
+$cloudbrew_yellow: #E7D450;
+$cloudbrew_href: #6D7ACC;

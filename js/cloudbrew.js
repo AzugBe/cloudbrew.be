@@ -9,7 +9,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 70)
-        }, 1000, "easeInOutExpo");
+        }, 600, "easeInOutExpo");
         return false;
       }
     }
@@ -48,18 +48,6 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
-  // Modal popup$(function () {
-  $('.portfolio-item').magnificPopup({
-    type: 'inline',
-    preloader: false,
-    focus: '#username',
-    modal: true
-  });
-  $(document).on('click', '.portfolio-modal-dismiss', function(e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
 
   // Floating label headings for the contact form
   $(function() {

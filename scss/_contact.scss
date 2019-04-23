@@ -31,10 +31,10 @@
     vertical-align: baseline;
     opacity: 0;
   }
-  &:not(:first-child) {
+  /* CloudBrew &:not(:first-child) {
     padding-left: 14px;
     border-left: 1px solid $gray-200;
-  }
+  }*/
 }
 
 .floating-label-form-group-with-value {
