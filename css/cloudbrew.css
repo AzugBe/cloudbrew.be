@@ -422,6 +422,12 @@ header.masthead {
   background-position: center bottom;
 }
 
+@media (max-width: 992px) {
+  header.masthead {
+    background-image: url("../img/cloud-narrow.png");
+  }
+}
+
 .footer {
   background-color: #050F4A;
 }
