@@ -335,7 +335,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #091b68;
+  color: #133add;
 }
 
 a:focus, a:hover, a:active {
@@ -426,9 +426,14 @@ header.masthead {
   background-color: #050F4A;
 }
 
-/* Sponsors */
-#sponsors img {
-  padding: 5px;
+/* Partners */
+#partners a img {
+  padding: 10px;
+}
+
+#partners a:hover img {
+  -webkit-box-shadow: 2px 2px 10px 0px #cccccc;
+  box-shadow: 2px 2px 10px 0px #cccccc;
 }
 
 /* Sessionize */

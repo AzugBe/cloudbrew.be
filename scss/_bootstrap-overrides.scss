@@ -1,6 +1,6 @@
 // Bootstrap overrides for this template
 a {
-  color: $primary;
+  color: lighten($primary, 25%);
   &:focus,
   &:hover,
   &:active {
@@ -97,9 +97,19 @@ header.masthead {
   background-color: $secondary;
 }
 
-/* Sponsors */
-#sponsors img {
-  padding: 5px;
+/* Partners */
+#partners a {
+  img {
+    padding: 10px;
+  }
+  
+  &:hover {
+    img {
+	  -webkit-box-shadow: 2px 2px 10px 0px rgba(204,204,204,1);
+      -moz-box-shadow: 2px 2px 10px 0px rgba(204,204,204,1);
+      box-shadow: 2px 2px 10px 0px rgba(204,204,204,1);
+	}
+  }
 }
   
 /* Sessionize */
