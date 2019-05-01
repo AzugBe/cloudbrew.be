@@ -103,6 +103,19 @@ header.masthead {
   background-color: $secondary;
 }
 
+.copyright {  
+  a { 
+    color: $white;
+	text-decoration: underline;
+	
+    &:focus,
+    &:hover,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
 /* Partners */
 #partners a {
   img {

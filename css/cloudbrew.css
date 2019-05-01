@@ -432,6 +432,15 @@ header.masthead {
   background-color: #050F4A;
 }
 
+.copyright a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.copyright a:focus, .copyright a:hover, .copyright a:active {
+  color: #fff;
+}
+
 /* Partners */
 #partners a img {
   padding: 10px;
