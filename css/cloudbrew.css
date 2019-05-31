@@ -442,8 +442,27 @@ header.masthead {
 }
 
 /* Partners */
-#partners a img {
-  padding: 10px;
+#partners {
+  text-align: center;
+}
+
+#partners hr {
+  width: 75%;
+}
+
+#partners a img.sponsor-silver {
+  width: 108px;
+  height: 54px;
+}
+
+#partners a img.sponsor-gold {
+  width: 192px;
+  height: 96px;
+}
+
+#partners a img.sponsor-platinum {
+  width: 240px;
+  height: 120px;
 }
 
 #partners a:hover img {
