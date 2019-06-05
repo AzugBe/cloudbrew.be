@@ -1,6 +1,6 @@
 # CloudBrew
 
-Website for www.cloudbrew.be, based on the [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/) theme.
+Website for https://www.cloudbrew.be, based on the [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/) theme.
 
 ## Usage
 
