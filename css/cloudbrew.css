@@ -432,6 +432,15 @@ header.masthead {
   background-color: #050F4A;
 }
 
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:focus, .footer a:hover, .footer a:active {
+  color: #fff;
+}
+
 .copyright a {
   color: #fff;
   text-decoration: underline;

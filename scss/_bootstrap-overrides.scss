@@ -101,9 +101,20 @@ header.masthead {
 
 .footer {
   background-color: $secondary;
+  
+  a { 
+    color: $white;
+	text-decoration: underline;
+	
+    &:focus,
+    &:hover,
+    &:active {
+      color: $white;
+    }
+  }
 }
 
-.copyright {  
+.copyright {
   a { 
     color: $white;
 	text-decoration: underline;
