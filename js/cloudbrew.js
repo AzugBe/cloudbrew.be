@@ -7,6 +7,7 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+		location.hash = $(this).attr('href').slice(1);
         $('html, body').animate({
           scrollTop: (target.offset().top - 70)
         }, 600, "easeInOutExpo");
@@ -59,5 +60,51 @@
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
+  
+  // History and deep linking for sessions
+  var szRestoreHistory = function() {
+    if (location.hash.indexOf('#session-') == 0) {
+	  $('.sz-session__title a').each(function() {
+        if (location.hash == '#' + szSlugify('session-' + $(this).text())) {
+          $(this).click();
+        }
+	  });
+	} else if (location.hash.indexOf('#speaker-') == 0) {
+	  $('.sz-speaker__name a').each(function() {
+        if (location.hash == '#' + szSlugify('speaker-' + $(this).text())) {
+          $(this).click();
+        }
+	  });
+	}
+  };
+  var szSlugify = function(subject) {
+	return subject.toLowerCase().replace(/\W/g, "-").replace(/--/g, "-");
+  };
+  var szPushHistory = function(subject) {
+	location.hash = szSlugify(subject);
+  };
+  window.onpopstate = function() {
+    $('.sz-modal__close-on-click').last().click();
+    setTimeout(szRestoreHistory, 500);
+  }
+
+  //$(document).on('click', '.sz-modal__close-on-click', function() {
+  //});
+  $(document).on('click', '.sz-session__title a', function() {
+	szPushHistory('session-' + $(this).text());
+  }); 
+  $(document).on('click', 'ul.sz-speaker__sessions li a', function() {
+	szPushHistory('session-' + $(this).text());
+  });  
+  $(document).on('click', '.sz-speaker__name a', function() {
+	szPushHistory('speaker-' + $(this).text());
+  });
+  $(document).on('click', 'ul.sz-session__speakers li a', function() {
+	szPushHistory('speaker-' + $(this).text());
+  });
+  
+  if (location.hash.length > 1) {
+    setTimeout(szRestoreHistory, 1000);
+  }
 
 })(jQuery); // End of use strict
