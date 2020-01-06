@@ -23,9 +23,9 @@ CATEGORIES:Meeting
 CLASS:PUBLIC
 CREATED:20160718T100120Z
 DESCRIPTION:Check www.cloudbrew.be for more info\n
-DTEND;TZID="Romance Standard Time":20201210T171500
 DTSTAMP:20160718T100120Z
-DTSTART;TZID="Romance Standard Time":20201211T083000
+DTSTART;TZID="Romance Standard Time":20201210T083000
+DTEND;TZID="Romance Standard Time":20201211T171500
 LAST-MODIFIED:20160718T100120Z
 LOCATION:Congres- en Erfgoedcentrum Lamot\, Van Beethovenstraat 8-10\, 2800
 	 Mechelen (Belgium)
