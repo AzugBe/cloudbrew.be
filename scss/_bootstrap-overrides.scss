@@ -151,14 +151,20 @@ header.masthead {
 	  img.sponsor-silver {
 	    width: $standard-width * $silver-factor;
 	    height: $standard-height * $silver-factor;
+        margin: 4px;
+        padding: 4px;
 	  }
 	  img.sponsor-gold {
 	    width: $standard-width * $gold-factor;
 	    height: $standard-height * $gold-factor;
+        margin: 6px;
+        padding: 6px;
 	  }
 	  img.sponsor-platinum {
 	    width: $standard-width * $platinum-factor;
 	    height: $standard-height * $platinum-factor;
+        margin: 8px;
+        padding: 8px;
 	  }
 	  
 	  &:hover {
