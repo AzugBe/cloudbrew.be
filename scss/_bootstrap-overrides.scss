@@ -205,7 +205,6 @@ header.masthead {
 
   .sz-session__card {
     border-radius: 0 !important;
-    border-color: red;
     background-color: $secondary !important;
 
     .sz-session__time,
@@ -215,6 +214,11 @@ header.masthead {
     .sz-session__tags,
     {
       color: #E7D450 !important;
+    }
+
+    .sz-session__room,
+    li.sz_tag {
+      background-color: $primary !important;
     }
   }
 }

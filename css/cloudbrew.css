@@ -479,7 +479,6 @@ header.masthead {
 }
 .sz-session .sz-session__card {
   border-radius: 0 !important;
-  border-color: red;
   background-color: #050F4A !important;
 }
 .sz-session .sz-session__card .sz-session__time,
@@ -488,6 +487,10 @@ header.masthead {
 .sz-session .sz-session__card .sz-session__speakers,
 .sz-session .sz-session__card .sz-session__tags {
   color: #E7D450 !important;
+}
+.sz-session .sz-session__card .sz-session__room,
+.sz-session .sz-session__card li.sz_tag {
+  background-color: #091b68 !important;
 }
 
 .sz-session__title,
