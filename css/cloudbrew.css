@@ -490,6 +490,7 @@ header.masthead {
 }
 .sz-session .sz-session__card .sz-session__room,
 .sz-session .sz-session__card li.sz_tag {
+  color: #fff !important;
   background-color: #091b68 !important;
 }
 
