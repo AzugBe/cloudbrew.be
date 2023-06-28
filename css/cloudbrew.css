@@ -346,6 +346,11 @@ a:focus, a:hover, a:active {
   background-color: #050F4A;
 }
 
+.bg-light hr.star-dark:after {
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
 .text-primary {
   color: #091b68 !important;
 }
@@ -455,6 +460,34 @@ header.masthead {
 #sz-modal-container .sz-speaker__link_icon,
 #sz-modal-container .sz-speaker__sessions {
   color: white !important;
+}
+
+.sz-cssgrid {
+  grid-gap: 0 !important;
+  border: none;
+}
+
+.sz-room {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sz-session {
+  border: none !important;
+  background-color: #050F4A !important;
+  margin-top: 0.125rem !important;
+  margin-left: 0.125rem !important;
+}
+.sz-session .sz-session__card {
+  border-radius: 0 !important;
+  border-color: red;
+  background-color: #050F4A !important;
+}
+.sz-session .sz-session__card .sz-session__time,
+.sz-session .sz-session__card .sz-session__title,
+.sz-session .sz-session__card .sz-session__description,
+.sz-session .sz-session__card .sz-session__speakers,
+.sz-session .sz-session__card .sz-session__tags {
+  color: #E7D450 !important;
 }
 
 .sz-session__title,

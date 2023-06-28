@@ -32,6 +32,11 @@ a {
   background-color: $secondary;
 }
 
+.bg-light hr.star-dark:after {
+  color: $gray-900;
+  background-color: $gray-100;
+}
+
 .text-primary {
   color: $primary !important;
 }
@@ -184,6 +189,37 @@ header.masthead {
 	color: white !important;
 }
 
+// New grid (GridSmart)
+.sz-cssgrid {
+  grid-gap: 0 !important;
+  border: none;
+}
+.sz-room {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.sz-session {
+  border: none !important;
+  background-color: $secondary !important;
+  margin-top: 0.125rem !important;
+  margin-left: 0.125rem !important;
+
+  .sz-session__card {
+    border-radius: 0 !important;
+    border-color: red;
+    background-color: $secondary !important;
+
+    .sz-session__time,
+    .sz-session__title,
+    .sz-session__description,
+    .sz-session__speakers,
+    .sz-session__tags,
+    {
+      color: #E7D450 !important;
+    }
+  }
+}
+
+// Old grid (gridtable)
 .sz-session__title,
 .sz-session__description,
 .sz-session__speakers,
